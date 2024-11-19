@@ -1,3 +1,37 @@
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll {
+  margin-bottom: 0;
+  font-size: 20px;
+  animation: bounce 2s infinite;
+}
+
+#scroll {
+  position: absolute;
+  bottom: 10px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px); /* Adjust bounce height as needed */
+  }
+}
+
+
 .App {
   background-color: #FF69B4;
   text-align: center;
