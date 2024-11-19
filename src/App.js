@@ -17,6 +17,7 @@ function App() {
           <br/>
           <br/>
           <p>hehe got u</p>
+          <p>anyways</p>
       </div>
   );
 }

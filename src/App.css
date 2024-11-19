@@ -1,13 +1,27 @@
 
+:root {
+  --offwhite: #DEE5E5;
+  --salmon: #875053;
+  --darkred: #330F0A;
+  --mint: #9DC5BB;
+  --forest: #404E4D;
+
+}
+
 h1 {
   margin: 0;
   padding: 0;
   font-size: 80px;
+  color: var(--salmon);
+  text-shadow: 1px 1px 2px var(--darkred);
 }
 
 h2 {
   margin: 0;
   padding: 0;
+  color: var(--salmon);
+  letter-spacing: 18px;
+  text-shadow: 1px 1px 2px var(--darkred);
 }
 
 .scroll {
@@ -19,13 +33,13 @@ h2 {
 #scroll {
   position: absolute;
   bottom: 10px;
+  color: var(--darkred);
 }
 
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-20px); /* Adjust bounce height as needed */
   }
@@ -33,7 +47,7 @@ h2 {
 
 
 .App {
-  background-color: #FF69B4;
+  background-color: var(--offwhite);
   text-align: center;
 }
 
@@ -50,7 +64,7 @@ h2 {
 
 .App-header {
   /*background-color: #282c34;*/
-  background-color: #FF69B4;
+  background-color: var(--offwhite);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,16 +74,3 @@ h2 {
   color: white;
 }
 
-.App-link {
-  /*color: #61dafb;*/
-  color: #672659;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
