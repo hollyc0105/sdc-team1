@@ -45,6 +45,10 @@ h2 {
   }
 }
 
+.input {
+  width: 200px;
+  height: 15px;
+}
 
 .App {
   background-color: var(--offwhite);

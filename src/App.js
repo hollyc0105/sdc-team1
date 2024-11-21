@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+    const [val, setVal] = useState("");
+
+
   return (
       <div className="App">
           <header className="App-header">
@@ -18,6 +21,11 @@ function App() {
           <br/>
           <p>hehe got u</p>
           <p>anyways</p>
+          <input placeholder="Enter some text..."
+                 value = {val}
+                 onChange = {(event) => setVal(event.target.value)}
+          />
+          <button onClick = {() => alert(val)}>Click Me!</button>
       </div>
   );
 }
