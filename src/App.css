@@ -1,15 +1,19 @@
 
-body {
-  background-color: blue;
-}
-
 :root {
   --offwhite: #DEE5E5;
   --salmon: #875053;
   --darkred: #330F0A;
   --mint: #9DC5BB;
   --forest: #404E4D;
+}
 
+body {
+  background-color: var(--offwhite);
+}
+
+header {
+  background-color: var(--offwhite);
+  box-shadow: 0px 3px 20px 5px grey;
 }
 
 h1 {
@@ -26,6 +30,11 @@ h2 {
   color: var(--salmon);
   letter-spacing: 18px;
   text-shadow: 1px 1px 2px var(--darkred);
+}
+
+h1.downsize {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .scroll {
@@ -49,13 +58,42 @@ h2 {
   }
 }
 
-.input {
-  width: 200px;
-  height: 15px;
+hr {
+  color: black;
+  height: 5px;
+  border: none;
+  box-shadow: 0px 10px 10px 10px grey;
+}
+
+input {
+  display: block;
+  width: 30%;
+  height: 50px;
+
+  border: none;
+  border-radius: 15px;
+  padding: 3px 3px 3px 10px;
+  margin: 10px;
+
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+input:focus {
+  outline-color: var(--salmon);
+}
+
+button {
+  background-color: var(--darkred);
+  color: var(--offwhite);
+
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 .App {
-  background-color: var(--offwhite);
+  /*background-color: var(--offwhite);*/
   text-align: center;
 }
 
@@ -72,7 +110,7 @@ h2 {
 
 .App-header {
   /*background-color: #282c34;*/
-  background-color: var(--offwhite);
+  /*background-color: var(--offwhite);*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;

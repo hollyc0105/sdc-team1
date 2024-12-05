@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 export function Home() {
     const [val, setVal] = useState("");
@@ -18,13 +19,20 @@ export function Home() {
             <br/>
             <br/>
             <br/>
-            <p>hehe got u</p>
-            <p>anyways</p>
-            <input placeholder="Enter some text..."
-                   value = {val}
-                   onChange = {(event) => setVal(event.target.value)}
-            />
-            <button onClick = {() => alert(val)}>Click Me!</button>
+            <h1 class={"downsize"}>
+                Information
+            </h1>
+            <center>
+                <input placeholder="Name"
+                   value={val}
+                    // stores the input in val
+                   onChange={(event) => setVal(event.target.value)}
+                />
+                <br/>
+                {/*value stored in val is displayed on screen in an alert*/}
+                <Link to={"/page1"}><button>Next</button></Link>
+            </center>
+
         </div>
     );
 }
