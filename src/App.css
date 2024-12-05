@@ -1,4 +1,8 @@
 
+body {
+  background-color: blue;
+}
+
 :root {
   --offwhite: #DEE5E5;
   --salmon: #875053;
